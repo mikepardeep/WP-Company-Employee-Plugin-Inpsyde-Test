@@ -4,7 +4,7 @@
     <description>My Project coding standard.</description>
 
     <file>./src</file>
-    <file>./tests/src</file>
+    <file>./resources</file>
 
     <arg value="sp"/>
     <arg name="colors"/>
