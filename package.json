@@ -1,0 +1,24 @@
+{
+  "name": "company-employee-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "wp-scripts build src/editor/EmployeeBlockEditor.js",
+    "start": "wp-scripts build src/editor/EmployeeBlockEditor.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikepardeep/WP-Employee-Profile-Plugin-InpsydeTest.git"
+  },
+  "author": "Pardeep Mohan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mikepardeep/WP-Employee-Profile-Plugin-InpsydeTest/issues"
+  },
+  "homepage": "https://github.com/mikepardeep/WP-Employee-Profile-Plugin-InpsydeTest#readme",
+  "dependencies": {
+    "@wordpress/scripts": "^23.0.0"
+  }
+}

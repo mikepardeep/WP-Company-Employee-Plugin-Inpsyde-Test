@@ -1,0 +1,15 @@
+{    
+    "require-dev": {
+        "inpsyde/php-coding-standards": "^1.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "autoload" :{
+        "psr-4": {
+            "CompanyEmployee\\": "src/"
+        }
+    }
+}
