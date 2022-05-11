@@ -4,7 +4,7 @@
  * @package Employees_Plugin
  *
  * Plugin Name:  Company Employee Plugin
- * Description: A new plugin
+ * Description: A Plugin that gives the list of company employee profile
  * Version: 1.0.0
  * Author: Pardeep Mohan
  * License: GPLv3 or later
@@ -26,12 +26,14 @@ if (file_exists(dirname(__FILE__) .'/vendor/autoload.php')){
     require_once dirname(__FILE__) .'/vendor/autoload.php';
 }
 
+
+$data2 = new CompanyEmployee\Provider\EmployeeProvider;
+
 /**
  * Plugin activation code.
  * includes/employees-plugin-activate.php
  */
 
-$data2 = new CompanyEmployee\Provider\EmployeeProvider;
 
 /**
  * Plugin deactivation code.
@@ -44,3 +46,22 @@ $data2 = new CompanyEmployee\Provider\EmployeeProvider;
  * Plugin main file execution.
  * includes/employees-plugin-main.php
  */
+
+
+/**
+ * Company Employee Post Register Script and Style
+ */
+add_action('init', 'company_employee_script_style_registration');
+
+function company_employee_script_style_registration()
+
+{
+		/**
+		 * Company Employee Post Register Script and Style
+         */
+        wp_register_script('block_script', plugin_dir_url(__FILE__). 'build/EmployeeBlockEditor.js', array('wp-blocks','wp-editor'));
+        wp_register_style('block_style', plugin_dir_url(__FILE__). 'build/EmployeeBlockEditor.css');
+    
+}
+
+

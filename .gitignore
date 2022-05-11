@@ -9,3 +9,6 @@ composer.lock
 .project
 .settings/
 .phpunit.result.cache
+
+node_modules
+build

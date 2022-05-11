@@ -20,7 +20,6 @@ class EmployeeMetaboxModel
         add_action('admin_init',  array($this, 'company_employee_meta_boxes'));
         add_action('save_post',  array($this, 'company_employee_save_meta_boxes_post'));
 
-
     }
 
     /**
