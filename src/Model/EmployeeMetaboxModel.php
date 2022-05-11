@@ -18,6 +18,8 @@ class EmployeeMetaboxModel
     public function __construct()
     {
         add_action('admin_init',  array($this, 'company_employee_meta_boxes'));
+        add_action('save_post',  array($this, 'company_employee_save_meta_boxes_post'));
+
 
     }
 
@@ -27,12 +29,12 @@ class EmployeeMetaboxModel
     public function company_employee_meta_boxes()
     {
         add_meta_box(
-            "employee_profile_metadata_post" ,      // div id containing rendered fields
-            "Employee",                             // section heading displayed as text
-            array($this,'company_employee_meta_boxes_post'),       // callback function to render the field
-            array($this, 'company_employee'),       // name of the post type which to render field
-            "side",                                 // location on the screen
-            "core"                                  // placement priority                   
+            "company_employee_metadata_post" ,                      // div id containing rendered fields
+            "Employee",                                             // section heading displayed as text
+            array($this,'company_employee_meta_boxes_post'),        // callback function to render the field
+            array($this, 'company_employee'),                       // name of the post type which to render field
+            "side",                                                 // location on the screen
+            "core"                                                  // placement priority                   
     
         );
 
@@ -72,11 +74,15 @@ class EmployeeMetaboxModel
         <input type="text" id="github_link" name="github_link"  placeholder="Your Github link.." required  value="<?php echo get_post_meta( $post->ID, 'github_link', true ); ?>">
         <br>
         <label for="xing_link">Xing Link</label>
-        <input type="text" id="xing_link" name="github_link"  placeholder="Your Xing link.." required  value="<?php echo get_post_meta( $post->ID, 'xing_link', true ); ?>">
+        <input type="text" id="xing_link" name="xing_link"  placeholder="Your Xing link.." required  value="<?php echo get_post_meta( $post->ID, 'xing_link', true ); ?>">
     
     <?php 
     
     }
+
+       /**
+     * Company Employee Post Metabox save function
+     */
 
     public function company_employee_save_meta_boxes_post(){
         global $post;
@@ -111,6 +117,10 @@ class EmployeeMetaboxModel
     
         if ( isset( $_POST['github_link'] ) ) {
             update_post_meta( $post->ID, 'github_link', sanitize_text_field($_POST['github_link']));
+        }
+
+        if ( isset( $_POST['xing_link'] ) ) {
+            update_post_meta( $post->ID, 'xing_link', sanitize_text_field($_POST['xing_link']));
         }
     }
 
