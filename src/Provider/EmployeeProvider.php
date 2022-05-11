@@ -16,6 +16,8 @@ namespace CompanyEmployee\Provider;
 use CompanyEmployee\Model\EmployeePostModel;
 use CompanyEmployee\Model\EmployeeMetaboxModel;
 use CompanyEmployee\Model\EmployeeBlockModel;
+use CompanyEmployee\Api\EmployeePostApi;
+
 
 class EmployeeProvider
 {
@@ -29,7 +31,7 @@ class EmployeeProvider
         new EmployeePostModel;
         new EmployeeMetaboxModel;
         new EmployeeBlockModel;
-        
+        new EmployeePostApi;        
     }
 
 

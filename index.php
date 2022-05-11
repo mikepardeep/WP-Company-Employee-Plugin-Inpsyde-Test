@@ -51,6 +51,7 @@ $data2 = new CompanyEmployee\Provider\EmployeeProvider;
 /**
  * Company Employee Post Register Script and Style
  */
+
 add_action('init', 'company_employee_script_style_registration');
 
 function company_employee_script_style_registration()
@@ -59,9 +60,7 @@ function company_employee_script_style_registration()
 		/**
 		 * Company Employee Post Register Script and Style
          */
-        wp_register_script('block_script', plugin_dir_url(__FILE__). 'build/EmployeeBlockEditor.js', array('wp-blocks','wp-editor'));
-        wp_register_style('block_style', plugin_dir_url(__FILE__). 'build/EmployeeBlockEditor.css');
+        wp_register_script('employee_block_script', plugin_dir_url(__FILE__). 'build/EmployeeBlockEditor.js', array('wp-blocks','wp-editor'));
+        wp_register_style('employee_block_style', plugin_dir_url(__FILE__). 'build/EmployeeBlockEditor.css');
     
 }
-
-

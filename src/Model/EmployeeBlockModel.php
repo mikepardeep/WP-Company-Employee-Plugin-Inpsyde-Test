@@ -23,22 +23,17 @@ class EmployeeBlockModel
     /**
      * Company Employee Post Block
      */
+
     function company_employee_post_block()
     {
 
-        /**
-         * Company Employee Post Register Script and Style
-         */
-        // wp_register_script('block_script', plugin_dir_url(__FILE__). 'build/EmployeeBlockEditor.js', array('wp-blocks','wp-editor'));
-        // wp_register_style('block_style', plugin_dir_url(__FILE__). 'build/EmployeeBlockEditor.css');
-
-        
          /**
          * Company Employee Post Register Block
          */
+
         register_block_type('ourplugin/company-employee', array(
-            'editor_script' => 'block_script',
-            'editor_style' => 'block_style',   
+            'editor_script' => 'employee_block_script',
+            'editor_style' => 'employee_block_style',   
         ));
 
       
