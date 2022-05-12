@@ -27,6 +27,15 @@ class EmployeeBlockModel
     function company_employee_post_block()
     {
 
+
+         /**
+		 * Company Employee Post Register Script and Style
+         */
+
+        // wp_register_script('employee_block_script', dirname(__FILE__) . '/build/EmployeeBlockEditor.js', array('wp-blocks','wp-editor'));
+        // wp_register_style('employee_block_style', dirname(__FILE__) . '/build/EmployeeBlockEditor.css');
+
+
          /**
          * Company Employee Post Register Block
          */
@@ -36,9 +45,6 @@ class EmployeeBlockModel
             'editor_style' => 'employee_block_style',   
         ));
 
-      
+
     }
-
-
-
 }

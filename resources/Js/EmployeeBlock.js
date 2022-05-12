@@ -8,5 +8,17 @@ registerBlockType('ourplugin/company-employee',{
     attributes:{
         employeeID: {type: "string"}
     },
+    edit: CompanyEmployeePostEditComponent,
+    save: function(){
+        return null
+    }
   
 })
+
+function CompanyEmployeePostEditComponent(){
+
+
+    return (
+        <h1>Hello world guys</h1>
+    )
+}

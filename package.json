@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "wp-scripts build src/editor/EmployeeBlockEditor.js",
-    "start": "wp-scripts build src/editor/EmployeeBlockEditor.js",
+    "start": "wp-scripts start resources/Js/EmployeeBlock.js",
+    "build": "wp-scripts build resources/Js/EmployeeBlock.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

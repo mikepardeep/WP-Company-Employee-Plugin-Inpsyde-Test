@@ -10,9 +10,8 @@
 
 declare(strict_types=1);
 
-namespace WP_REST_Server;
-
 namespace CompanyEmployee\Api;
+
 
 class EmployeePostApi
 {
@@ -42,8 +41,10 @@ class EmployeePostApi
      * Company Employee Post Route HTML
      */
 
-    public function company_employee_route_HTML(){
-        return '<h4>Hello from our endpoint<h4>';
+    public function company_employee_route_HTML($data){
+        return EmployeePostPublic($data['employeeID']);
+        
     }
+
 
 }
