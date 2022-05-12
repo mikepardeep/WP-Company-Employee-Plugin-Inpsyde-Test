@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "wp-scripts start resources/Js/EmployeeBlock.js",
-    "build": "wp-scripts build resources/Js/EmployeeBlock.js",
+    "start": "wp-scripts start resources/Js/EmployeeBlock.js  resources/Js/EmployeePublic.js",
+    "build": "wp-scripts build resources/Js/EmployeeBlock.js  resources/Js/EmployeePublic.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/mikepardeep/WP-Employee-Profile-Plugin-InpsydeTest#readme",
   "dependencies": {
-    "@wordpress/scripts": "^23.0.0"
+    "@wordpress/api-fetch": "^6.5.0",
+    "@wordpress/data": "^6.8.0",
+    "@wordpress/scripts": "^23.0.0",
+    "dompurify": "^2.3.7"
   }
 }

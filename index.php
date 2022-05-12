@@ -79,9 +79,17 @@ function company_employee_script_style_registration()
 
 {
 		/**
-		 * Company Employee Post Register Script and Style
+		 * Company Employee block Register Script and Style
          */
         wp_register_script('employee_block_script', plugin_dir_url(__FILE__). 'build/EmployeeBlock.js', array('wp-blocks','wp-editor'));
         wp_register_style('employee_block_style', plugin_dir_url(__FILE__). 'build/EmployeeBlock.css');
+
+
+        /**
+		 * Company Employee Public Register Script and Style
+         */
+        wp_register_script('employee_public_script', plugin_dir_url(__FILE__). 'build/EmployeePublic.js', array('wp-blocks','wp-editor'));
+        wp_register_style('employee_public_style', plugin_dir_url(__FILE__). 'build/EmployeePublic.css');
+        
     
 }
