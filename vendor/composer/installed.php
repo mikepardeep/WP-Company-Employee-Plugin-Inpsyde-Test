@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '501dfd05d8b5ed5bf2dfc2036ab845a1ca2bbd77',
+        'reference' => '5ca9117a5487a690e5ba5a475d41fb6626ad1664',
         'name' => '__root__',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '501dfd05d8b5ed5bf2dfc2036ab845a1ca2bbd77',
+            'reference' => '5ca9117a5487a690e5ba5a475d41fb6626ad1664',
             'dev_requirement' => false,
         ),
         'automattic/phpcs-neutron-standard' => array(

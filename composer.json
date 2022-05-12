@@ -9,8 +9,7 @@
     },
     "autoload" :{
         "psr-4": {
-            "CompanyEmployee\\": ["src/","resources/"]
-            
+            "CompanyEmployee\\": "src/"
         }
     }
 }

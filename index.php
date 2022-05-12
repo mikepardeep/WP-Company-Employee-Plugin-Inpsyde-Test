@@ -50,12 +50,13 @@ register_activation_hook(__FILE__,'company_employee_activate');
  */
 
 
+
 function company_employee_deactivate(){
     CompanyEmployeePluginActivate::deactivate();
  }
 
-
 register_deactivation_hook(__FILE__,'company_employee_deactivate');
+
 
 
  /**
@@ -66,9 +67,10 @@ register_deactivation_hook(__FILE__,'company_employee_deactivate');
 $companyEmployeePlugin = new EmployeeProvider;
 
 
-// /**
-//  * Company Employee Post Register Script and Style
-//  */
+
+/**
+ * Company Employee Post Register Script and Style
+ */
 
 
 add_action('init', 'company_employee_script_style_registration');
