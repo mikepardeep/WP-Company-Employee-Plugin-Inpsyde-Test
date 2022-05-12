@@ -31,11 +31,8 @@ class EmployeeProvider
         new EmployeePostModel;
         new EmployeeMetaboxModel;
         new EmployeeBlockModel;
-        new EmployeePostApi;        
+        new EmployeePostApi;      
     }
-
-
-    
 
 
 }

@@ -7,11 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'VariableAnalysis\\' => array($vendorDir . '/sirbrillig/phpcs-variable-analysis/VariableAnalysis'),
-    'Psr\\Container\\' => array($vendorDir . '/psr/container/src'),
     'NeutronStandard\\' => array($vendorDir . '/automattic/phpcs-neutron-standard/NeutronStandard'),
-    'Inpsyde\\Modularity\\' => array($vendorDir . '/inpsyde/modularity/src'),
-    'Inpsyde\\Assets\\' => array($vendorDir . '/inpsyde/assets/src'),
-    'Inpsyde\\' => array($vendorDir . '/inpsyde/wp-context/src'),
     'Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\' => array($vendorDir . '/dealerdirect/phpcodesniffer-composer-installer/src'),
     'CompanyEmployee\\' => array($baseDir . '/src'),
 );

@@ -1,7 +1,7 @@
 <?php
 /**
  * @since 1.0.0
- * @package Employees_Plugin
+ * @package Company Employee Plugin
  *
  * Plugin Name:  Company Employee Plugin
  * Description: A Plugin that gives the list of company employee profile
@@ -11,6 +11,9 @@
  * Text Domain: employees-plugin
  */
 
+use CompanyEmployee\Inc\CompanyEmployeePluginActivate;
+use CompanyEmployee\Inc\CompanyEmployeePluginDeactivate;
+use CompanyEmployee\Provider\EmployeeProvider;
 
 /**
  * Exit file directly
@@ -18,6 +21,7 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
+
 
 /**
  * Autoload file.
@@ -27,12 +31,17 @@ if (file_exists(dirname(__FILE__) .'/vendor/autoload.php')){
 }
 
 
-$data2 = new CompanyEmployee\Provider\EmployeeProvider;
-
 /**
  * Plugin activation code.
  * includes/employees-plugin-activate.php
  */
+
+
+function company_employee_activate(){
+    CompanyEmployeePluginActivate::activate();
+ }
+
+register_activation_hook(__FILE__,'company_employee_activate');
 
 
 /**
@@ -42,15 +51,27 @@ $data2 = new CompanyEmployee\Provider\EmployeeProvider;
 
 
 
+function company_employee_deactivate(){
+    CompanyEmployeePluginActivate::deactivate();
+ }
+
+register_deactivation_hook(__FILE__,'company_employee_deactivate');
+
+
+
  /**
  * Plugin main file execution.
  * includes/employees-plugin-main.php
  */
 
+$companyEmployeePlugin = new EmployeeProvider;
+
+
 
 /**
  * Company Employee Post Register Script and Style
  */
+
 
 add_action('init', 'company_employee_script_style_registration');
 
@@ -58,9 +79,17 @@ function company_employee_script_style_registration()
 
 {
 		/**
-		 * Company Employee Post Register Script and Style
+		 * Company Employee block Register Script and Style
          */
-        wp_register_script('employee_block_script', plugin_dir_url(__FILE__). 'build/EmployeeBlockEditor.js', array('wp-blocks','wp-editor'));
-        wp_register_style('employee_block_style', plugin_dir_url(__FILE__). 'build/EmployeeBlockEditor.css');
+        wp_register_script('employee_block_script', plugin_dir_url(__FILE__). 'build/EmployeeBlock.js', array('wp-blocks','wp-editor'));
+        wp_register_style('employee_block_style', plugin_dir_url(__FILE__). 'build/EmployeeBlock.css');
+
+
+        /**
+		 * Company Employee Public Register Script and Style
+         */
+        wp_register_script('employee_public_script', plugin_dir_url(__FILE__). 'build/EmployeePublic.js', array('wp-blocks','wp-editor'));
+        wp_register_style('employee_public_style', plugin_dir_url(__FILE__). 'build/EmployeePublic.css');
+        
     
 }

@@ -10,15 +10,17 @@
 
 declare(strict_types=1);
 
-namespace WP_REST_Server;
-
 namespace CompanyEmployee\Api;
 
-class EmployeePostApi
+use CompanyEmployee\FrontendPublic\EmployeePostPublic;
+
+
+class EmployeePostApi extends EmployeePostPublic
 {
     public function __construct()
     {
         add_action('rest_api_init',  array($this, 'company_employee_rest_api'));
+        $this->employeePublic();
     }
 
     /**
@@ -33,17 +35,28 @@ class EmployeePostApi
         
         register_rest_route('companyEmployee/v1', 'getHTML', array(
             'methods' => 'GET',
-            'callback' => array($this,'company_employee_route_HTML')
+            'callback' => array($this,'company_employee_post_route')
         ));
 
     }
 
     /**
-     * Company Employee Post Route HTML
+     * Company Employee Post Route
      */
 
-    public function company_employee_route_HTML(){
-        return '<h4>Hello from our endpoint<h4>';
+    public function company_employee_post_route($data){
+        return $this->company_employee_public($data['employeeID']);
     }
+
+
+
+    public function employeePublic()
+    {
+        new EmployeePostPublic;
+    }
+
+
+
+
 
 }

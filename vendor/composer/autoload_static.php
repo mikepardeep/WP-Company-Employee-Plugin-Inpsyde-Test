@@ -6,29 +6,14 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit3379987ce857d4b94752a1f8e958ffee
 {
-    public static $files = array (
-        '75224de648373daee048deff719e279d' => __DIR__ . '/..' . '/inpsyde/assets/inc/functions.php',
-        'd57dd50c5392c5a5044aae288d38e1c5' => __DIR__ . '/..' . '/inpsyde/assets/inc/bootstrap.php',
-    );
-
     public static $prefixLengthsPsr4 = array (
         'V' => 
         array (
             'VariableAnalysis\\' => 17,
         ),
-        'P' => 
-        array (
-            'Psr\\Container\\' => 14,
-        ),
         'N' => 
         array (
             'NeutronStandard\\' => 16,
-        ),
-        'I' => 
-        array (
-            'Inpsyde\\Modularity\\' => 19,
-            'Inpsyde\\Assets\\' => 15,
-            'Inpsyde\\' => 8,
         ),
         'D' => 
         array (
@@ -45,25 +30,9 @@ class ComposerStaticInit3379987ce857d4b94752a1f8e958ffee
         array (
             0 => __DIR__ . '/..' . '/sirbrillig/phpcs-variable-analysis/VariableAnalysis',
         ),
-        'Psr\\Container\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/psr/container/src',
-        ),
         'NeutronStandard\\' => 
         array (
             0 => __DIR__ . '/..' . '/automattic/phpcs-neutron-standard/NeutronStandard',
-        ),
-        'Inpsyde\\Modularity\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/inpsyde/modularity/src',
-        ),
-        'Inpsyde\\Assets\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/inpsyde/assets/src',
-        ),
-        'Inpsyde\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/inpsyde/wp-context/src',
         ),
         'Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\' => 
         array (
