@@ -12,7 +12,7 @@ declare(strict_types=1);
 
 namespace CompanyEmployee\Api;
 
-use CompanyEmployee\FrontendPublic\EmployeePostPublic;
+use CompanyEmployee\PublicFrontend\EmployeePostPublic;
 
 
 class EmployeePostApi extends EmployeePostPublic
@@ -40,6 +40,7 @@ class EmployeePostApi extends EmployeePostPublic
 
     }
 
+
     /**
      * Company Employee Post Route
      */
@@ -48,6 +49,10 @@ class EmployeePostApi extends EmployeePostPublic
         return $this->company_employee_public($data['employeeID']);
     }
 
+    
+    /**
+     * Company Employee sending content to Post Route
+     */
 
 
     public function employeePublic()

@@ -1,3 +1,8 @@
 import "../Scss/EmployeePublic.scss";
 
-console.log("hello world");
+
+let popup =  document.getElementById("company-employee-container")
+let downarrow = document.getElementById("downarrowicon")
+
+console.log(popup);
+

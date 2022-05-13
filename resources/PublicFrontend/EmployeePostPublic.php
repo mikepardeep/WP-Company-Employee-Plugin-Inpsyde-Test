@@ -10,7 +10,7 @@
 
 declare(strict_types=1);
 
-namespace CompanyEmployee\FrontendPublic;
+namespace CompanyEmployee\PublicFrontend;
 
 
 class EmployeePostPublic
@@ -44,20 +44,19 @@ class EmployeePostPublic
                     <p><?php echo get_post_meta($post->ID, 'position', true) ?></p>
                     <div class="company-employee-bottom">
                         <p>Learn more about this employee</p>
-                        <span class="dashicons dashicons-arrow-down-alt"></span>
+                        <span onclick="displayProfile()" class="dashicons dashicons-arrow-down-alt"></span>
                         <div class="company-employee-bottom-popup">
                             <p><?php echo get_post_meta($post->ID, 'short_description', true) ?></p>
                             <div class="company-employee-social-link">
                                 <p><a href="<?php echo get_post_meta($post->ID, 'facebook_link', true) ?>"><span class="dashicons dashicons-facebook-alt"></span>facebook</a></p>
-                                <p><a href="<?php echo get_post_meta($post->ID, 'linkedIn_link', true) ?>"><span class="dashicons dashicons-linkedin"></span>facebook</a></p>
-                                <p><a href="<?php echo get_post_meta($post->ID, 'github_link', true) ?>"><span class="dashicons dashicons-facebook-alt"></span>facebook</a></p>
-                                <p><a href="<?php echo get_post_meta($post->ID, 'xing_link', true) ?>"><span class="dashicons  dashicons-xing"></span>facebook</a></p>
+                                <p><a href="<?php echo get_post_meta($post->ID, 'linkedIn_link', true) ?>"><span class="dashicons dashicons-linkedin"></span>linkedIn</a></p>
+                                <p><a href="<?php echo get_post_meta($post->ID, 'github_link', true) ?>"><span class="dashicons dashicons-facebook-alt"></span>github</a></p>
+                                <p><a href="<?php echo get_post_meta($post->ID, 'xing_link', true) ?>"><span class="dashicons  dashicons-xing"></span>xing</a></p>
                             </div>
                         </div>
                     </div>
                 </div>
            </div>
-
         <?php
 
         wp_reset_postdata();

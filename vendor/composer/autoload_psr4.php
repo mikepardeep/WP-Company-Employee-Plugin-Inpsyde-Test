@@ -9,5 +9,5 @@ return array(
     'VariableAnalysis\\' => array($vendorDir . '/sirbrillig/phpcs-variable-analysis/VariableAnalysis'),
     'NeutronStandard\\' => array($vendorDir . '/automattic/phpcs-neutron-standard/NeutronStandard'),
     'Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\' => array($vendorDir . '/dealerdirect/phpcodesniffer-composer-installer/src'),
-    'CompanyEmployee\\' => array($baseDir . '/src'),
+    'CompanyEmployee\\' => array($baseDir . '/src', $baseDir . '/resources'),
 );

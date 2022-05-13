@@ -27,13 +27,13 @@ class EmployeePostModel
     public function company_employee_post_type()
     {
             $labels = array(
-                'name'                  => 'Employee Profile',
-                'add_new_item'          => 'Add New Employee Profile',
-                'edit_item'             => 'Edit Employee Profile',
-                'all_items'             => 'All Employees Profile',
+                'name'                  => 'Employees',
+                'add_new_item'          => 'Add New Employee',
+                'edit_item'             => 'Edit Employee',
+                'all_items'             => 'All Employees',
                 'singular_name'         => 'Employee',
-                'featured_image'        => 'Employee Profile Image',
-                'set_featured_image'    => 'Set Employee Profile Image',
+                'featured_image'        => 'Employee Image',
+                'set_featured_image'    => 'Set Employee Image',
                 'remove_featured_image' => 'Remove Employee Image'
             );
 
