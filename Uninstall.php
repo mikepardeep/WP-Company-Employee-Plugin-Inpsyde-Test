@@ -10,22 +10,17 @@
 
 declare(strict_types=1);
 
-namespace CompanyEmployee\Inc;
-
+namespace CompanyEmployee;
 
 class CompanyEmployeeUninstall
 {
     public static function uninstall()
     {
-        /**
-         * Clear Company Employee Post Database
-         */
+        // Clear Company Employee Post Database.
 
          global $wpdb;
 
          $wpdb->query("DELETE FROM wp_posts WHERE post_type = 'company_employee'");
          $wpdb->query("DELETE FROM wp_postmeta WHERE post_id NOT IN (SELECT id FROM wp_posts)");
-
-
     }
 }

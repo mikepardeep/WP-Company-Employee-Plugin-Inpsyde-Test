@@ -1,25 +1,32 @@
 <?php
-/**
- * @since 1.0.0
- * @package Company Employee Plugin
- *
- * Plugin Name:  Company Employee Plugin
- * Description: A Plugin that gives the list of company employee profile
- * Version: 1.0.0
- * Author: Pardeep Mohan
- * License: GPLv3 or later
- * Text Domain: employees-plugin
- */
 
+/**
+ * Company Employee Plugin
+ *
+ * @package           PluginPackage
+ * @author            Pardeep Mohan
+ * @copyright         2022 Pardeep Mohan
+ * @license           GPL-2.0-or-later
+ *
+ * @wordpress-plugin
+ * Plugin Name:       Company Employee Plugin
+ * Description:       A plugin that gives the list of company employee profile
+ * Version:           1.0.0
+ * Requires at least: 5.2
+ * Requires PHP:      7.2
+ * Author:            Pardeep Mohan
+ * Text Domain:       plugin-company_employee
+ * License:           GPL v2 or later
+
+ */
+ 
 use CompanyEmployee\Inc\CompanyEmployeePluginActivate;
 use CompanyEmployee\Inc\CompanyEmployeePluginDeactivate;
-use CompanyEmployee\Inc\CompanyEmployeeUninstall;
+use CompanyEmployee\CompanyEmployeeUninstall;
 use CompanyEmployee\Provider\EmployeeProvider;
 
 
-/**
- * Exit file directly
- */
+// Exit file directly.
 
 if ( ! defined( 'ABSPATH' ) ) 
 {
@@ -27,9 +34,7 @@ if ( ! defined( 'ABSPATH' ) )
 }
 
 
-/**
- * Autoload file.
- */
+// Autoload file.
 
 if (file_exists(dirname(__FILE__) .'/vendor/autoload.php'))
 {
@@ -37,10 +42,7 @@ if (file_exists(dirname(__FILE__) .'/vendor/autoload.php'))
 }
 
 
-/**
- * Plugin activation code.
- */
-
+// Plugin activation code.
 
 function company_employee_activate()
 {
@@ -50,11 +52,7 @@ function company_employee_activate()
 register_activation_hook(__FILE__,'company_employee_activate');
 
 
-/**
- * Plugin deactivation code.
- */
-
-
+// Plugin deactivation code.
 
 function company_employee_deactivate()
 {
@@ -64,10 +62,7 @@ function company_employee_deactivate()
 register_deactivation_hook(__FILE__,'company_employee_deactivate');
 
 
-
-/**
- * Plugin uninstall code.
- */
+// Plugin uninstall code.
 
 function company_employee_uninstall()
 {
@@ -78,12 +73,14 @@ function company_employee_uninstall()
 register_uninstall_hook(__FILE__,'company_employee_uninstall');
 
 
-
- /**
- * Plugin main file execution
- */
+// Plugin main file execution.
 
 
-$companyEmployeePlugin = new EmployeeProvider;
+function main_plugin_file_execution()
+{
+    new EmployeeProvider;
+}
+
+main_plugin_file_execution();
 
 

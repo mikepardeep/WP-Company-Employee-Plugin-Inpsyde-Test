@@ -1,3 +1,8 @@
+/**
+ * Gutenberg Block Styling.
+ *
+ * This file present the code for Gutenberg Block Styling. 
+ */
 
 .company-employee-featured-wrapper
 {
@@ -13,7 +18,8 @@
     padding:2rem 0;
 }
 
-.company-employee-select-container select
+.company-employee-select-container 
+select
 {
     text-align: center;
     font-weight: bold;

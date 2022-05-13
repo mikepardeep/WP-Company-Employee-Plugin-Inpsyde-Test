@@ -12,7 +12,6 @@ declare(strict_types=1);
 
 namespace CompanyEmployee\Inc;
 
-
 class CompanyEmployeePluginActivate
 {
     public static function activate()

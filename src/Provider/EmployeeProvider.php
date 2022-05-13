@@ -1,13 +1,17 @@
 <?php
 
-/*
- * This file is part of the company employee plugin package.
+/**
+ * Main Plugin Class Initialization
  *
- * Inpsyde Developer Test
+ * This file class initialized all the classes accordingly.
  *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
+ * @link URL
+ *
+ * @package WordPress
+ * @subpackage Component
+ * @since x.x.x (when the file was introduced)
  */
+
 
 declare(strict_types=1);
 
@@ -26,9 +30,9 @@ class EmployeeProvider
         $this->initClasses();
     }
 
-    /**
-     * Company Employee Post Class Initialize Funciton
-     */
+
+    // Company Employee Post Class Initialize Funciton.
+
     public function initClasses()
     {
         new EmployeePostModel;
@@ -37,9 +41,6 @@ class EmployeeProvider
         new EmployeePostApi;
         new EmployeeRegistration;
     }
-
-
-
 
 }
 

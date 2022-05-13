@@ -1,3 +1,10 @@
+/**
+ * Public Front End Styling.
+ *
+ * This code present the styling for the public front end content.
+ */
+
+
 *{
     box-sizing:border-box;
 }
@@ -22,17 +29,21 @@
     border-radius: 20px;
 }
 
-.company-employee-box h3
+.company-employee-box 
+h3
 {
     margin-top:4rem;
 }
 
-.company-employee-box h3 span
+.company-employee-box 
+h3 
+span
 {
     padding-left: 1rem;
 }
 
-.company-employee-box p 
+.company-employee-box 
+p 
 {
     margin-bottom:4rem;
 }
@@ -60,16 +71,26 @@
 }
 
 
-.company-employee-bottom p
+.company-employee-bottom 
+p
 {
     margin-bottom:0;
 }
 
 
-.company-employee-bottom .dashicons-arrow-down-alt 
+.company-employee-bottom 
+.dashicons-arrow-down-alt
 {
     width: 15px;
-    margin-top: 5px;
+    margin-top: 10px;
+    cursor:pointer;
+}
+
+.company-employee-bottom 
+.dashicons-arrow-up-alt
+{
+    width: 15px;
+    margin-top: 12px;
     cursor:pointer;
 }
 
@@ -96,26 +117,30 @@
 }
 
 
-.company-employee-social-link p
+.company-employee-social-link 
+p
 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     
 }
 
-.company-employee-social-link a 
+.company-employee-social-link 
+a 
 {
     color:#999;
     text-decoration: none;
 }
 
 
-.company-employee-social-link a:hover
+.company-employee-social-link 
+a:hover
 {
     color: #ff574a;
 }
 
-.company-employee-social-link span
+.company-employee-social-link 
+span
 {
     font-size: 15px;
     padding-top:0.7rem;
@@ -123,3 +148,16 @@
 }
 
 
+//Code for Onclick function
+.display-profile
+{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hide-arrow
+{
+    display:none;
+}
