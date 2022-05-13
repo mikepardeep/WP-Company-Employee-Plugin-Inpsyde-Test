@@ -17,7 +17,7 @@ use CompanyEmployee\Model\EmployeePostModel;
 use CompanyEmployee\Model\EmployeeMetaboxModel;
 use CompanyEmployee\Model\EmployeeBlockModel;
 use CompanyEmployee\Api\EmployeePostApi;
-
+use CompanyEmployee\Registration\EmployeeRegistration;
 
 class EmployeeProvider
 {
@@ -26,13 +26,19 @@ class EmployeeProvider
         $this->initClasses();
     }
 
+    /**
+     * Company Employee Post Class Initialize Funciton
+     */
     public function initClasses()
     {
         new EmployeePostModel;
         new EmployeeMetaboxModel;
         new EmployeeBlockModel;
-        new EmployeePostApi;      
+        new EmployeePostApi;
+        new EmployeeRegistration;
     }
+
+
 
 
 }

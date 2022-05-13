@@ -1,8 +1,125 @@
 *{
-    margin: 0
+    box-sizing:border-box;
 }
 
 .company-employee-container
 {
-    background-color: pink;
+    width:100%;
+    height:90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
+
+.company-employee-box
+{
+    background-color: #ff574a;
+    text-align: center;
+    width: 90%;
+    padding:40px 90px;
+    color: #fff;
+    position:relative;
+    border-radius: 20px;
+}
+
+.company-employee-box h3
+{
+    margin-top:4rem;
+}
+
+.company-employee-box h3 span
+{
+    padding-left: 1rem;
+}
+
+.company-employee-box p 
+{
+    margin-bottom:4rem;
+}
+
+.company-employee-image
+{
+    width: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding:6px;
+    margin-left:auto;
+    margin-top: 3rem;
+    margin-right: auto;
+}
+
+.company-employee-bottom
+{
+    background-color: #fff;
+    color: #999;
+    padding:20px 0;
+    margin-right : -90px;
+    margin-left: -90px;
+    margin-bottom: -40px;
+    border-radius: 20px;
+}
+
+
+.company-employee-bottom p
+{
+    margin-bottom:0;
+}
+
+
+.company-employee-bottom .dashicons-arrow-down-alt 
+{
+    width: 15px;
+    margin-top: 5px;
+    cursor:pointer;
+}
+
+
+.dashicons:hover{
+    color:#ff574a;
+
+}
+
+.company-employee-bottom-popup
+{
+    display:none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.company-employee-social-link
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.3rem;
+}
+
+
+.company-employee-social-link p
+{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    
+}
+
+.company-employee-social-link a 
+{
+    color:#999;
+    text-decoration: none;
+}
+
+
+.company-employee-social-link a:hover
+{
+    color: #ff574a;
+}
+
+.company-employee-social-link span
+{
+    font-size: 15px;
+    padding-top:0.7rem;
+    padding-right: 0.7rem;
+}
+
+

@@ -19,7 +19,7 @@ class EmployeeMetaboxModel
     {
         add_action('admin_init',  array($this, 'company_employee_meta_boxes'));
         add_action('save_post',  array($this, 'company_employee_save_meta_boxes_post'));
-
+        
     }
 
     /**
@@ -52,25 +52,25 @@ class EmployeeMetaboxModel
         ?>
         
         <label for="first_name">First Name</label>
-        <input type="text" id="first_name" name="first_name"  placeholder="Your first name.." required  value="<?php echo get_post_meta( $post->ID, 'first_name', true ); ?>">
+        <input type="text" id="first_name" name="first_name"  placeholder="Your first name.." required  value="<?php echo get_post_meta( $post->ID, 'first_name', true ); ?>" required>
         <br>
         <label for="last_name">Last Name</label>
-        <input type="text" id="last_name" name="last_name"  placeholder="Your last name.." required  value="<?php echo get_post_meta( $post->ID, 'last_name', true ); ?>">
+        <input type="text" id="last_name" name="last_name"  placeholder="Your last name.." required  value="<?php echo get_post_meta( $post->ID, 'last_name', true ); ?>" required>
         <br>
         <label for="short_description">Short Description</label>
-        <input type="text" id="short_description" name="short_description"  placeholder="Your short description.." required  value="<?php echo get_post_meta( $post->ID, 'short_description', true ); ?>">
+        <input type="text" id="short_description" name="short_description"  placeholder="Your short description.." required  value="<?php echo get_post_meta( $post->ID, 'short_description', true ); ?>" required>
         <br>
         <label for="short_description">Company Position</label>
-        <input type="text" id="position" name="position"  placeholder="Your Position.." required  value="<?php echo get_post_meta( $post->ID, 'position', true ); ?>">
+        <input type="text" id="position" name="position"  placeholder="Your Position.." required  value="<?php echo get_post_meta( $post->ID, 'position', true ); ?>" required>
         <br>
         <label for="facebook_link">Facebook Link</label>
-        <input type="text" id="facebook_link" name="facebook_link"  placeholder="Your Facebook link.."  value="<?php echo get_post_meta( $post->ID, 'facebook_link', true ); ?>">
+        <input type="text" id="facebook_link" name="facebook_link"  placeholder="Your Facebook link.."  value="<?php echo get_post_meta( $post->ID, 'facebook_link', true ); ?>" >
         <br>
         <label for="linkedIn_link">LinkedIn Link</label>
-        <input type="text" id="linkedIn_link" name="linkedIn_link"  placeholder="Your LinkedIn link.." required  value="<?php echo get_post_meta( $post->ID, 'linkedIn_link', true ); ?>">
+        <input type="text" id="linkedIn_link" name="linkedIn_link"  placeholder="Your LinkedIn link.." required  value="<?php echo get_post_meta( $post->ID, 'linkedIn_link', true ); ?>" required>
         <br>
         <label for="github_link">Github Link</label>
-        <input type="text" id="github_link" name="github_link"  placeholder="Your Github link.." required  value="<?php echo get_post_meta( $post->ID, 'github_link', true ); ?>">
+        <input type="text" id="github_link" name="github_link"  placeholder="Your Github link.." required  value="<?php echo get_post_meta( $post->ID, 'github_link', true ); ?>" required>
         <br>
         <label for="xing_link">Xing Link</label>
         <input type="text" id="xing_link" name="xing_link"  placeholder="Your Xing link.." required  value="<?php echo get_post_meta( $post->ID, 'xing_link', true ); ?>">

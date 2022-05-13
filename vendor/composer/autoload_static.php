@@ -41,6 +41,7 @@ class ComposerStaticInit3379987ce857d4b94752a1f8e958ffee
         'CompanyEmployee\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
+            1 => __DIR__ . '/../..' . '/resources',
         ),
     );
 

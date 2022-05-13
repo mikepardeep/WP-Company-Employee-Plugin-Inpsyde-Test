@@ -12,7 +12,8 @@ declare(strict_types=1);
 
 namespace CompanyEmployee\Model;
 
-use CompanyEmployee\FrontendPublic\EmployeePostPublic;
+use CompanyEmployee\PublicFrontend\EmployeePostPublic;
+
 
 class EmployeeBlockModel extends EmployeePostPublic
 {   
@@ -23,23 +24,12 @@ class EmployeeBlockModel extends EmployeePostPublic
     }
 
 
-
     /**
      * Company Employee Post Block
      */
 
     public function company_employee_post_block()
     {
-
-
-         /**
-		 * Company Employee Post Register Script and Style
-         */
-
-        // wp_register_script('employee_block_script', dirname(__FILE__) . '/build/EmployeeBlockEditor.js', array('wp-blocks','wp-editor'));
-        // wp_register_style('employee_block_style', dirname(__FILE__) . '/build/EmployeeBlockEditor.css');
-
-
          /**
          * Company Employee Post Register Block
          */
@@ -64,6 +54,7 @@ class EmployeeBlockModel extends EmployeePostPublic
         if ($attributes["employeeID"])
         {
             wp_enqueue_style('employee_public_style');
+            wp_enqueue_script('employee_public_script');
 
             return $this-> company_employee_public($attributes['employeeID']);
         }
