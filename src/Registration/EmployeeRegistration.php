@@ -1,11 +1,13 @@
 <?php
 
-/*
- * This file is part of the company employee plugin package.
+/**
+ * Post Script and Style Registration
+ *
+ * This file class register script and style for both block and public front end of the plugin.
  *
  *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
+ * @package Company Employee Plugin
+ * @since 12.05.2022 (when the file was introduced)
  */
 
 declare(strict_types=1);
@@ -19,6 +21,10 @@ class EmployeeRegistration
     {
         add_action('init',  array($this, 'employeeRegistrationInit'));
     }
+
+    /**
+     * Company Employee Post Script and Style Registration
+     */
 
     public function employeeRegistrationInit()
     {

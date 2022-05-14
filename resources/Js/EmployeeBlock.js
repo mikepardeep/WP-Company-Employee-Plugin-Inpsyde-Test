@@ -9,7 +9,7 @@ import "../Scss/EmployeeBlock.scss";
 registerBlockType('ourplugin/company-employee',{
     title: "Company Employees",
     description:"List of Employee Profile",
-    icon:"welcome-learn-more",
+    icon:"admin-users",
     attributes:{
         employeeID: {type: "string"}
     },
@@ -79,7 +79,7 @@ function CompanyEmployeeEditComponent(props){
                     }
                 </select>
             </div>
-            <div dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(thePreview)}}>
+            <div className="company-employee-post-content" dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(thePreview)}}>
 
             </div>
         </div>

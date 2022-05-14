@@ -1,9 +1,14 @@
+/**
+ * Gutenberg Block Styling.
+ *
+ * This file present the code for Gutenberg Block Styling. 
+ */
 
 .company-employee-featured-wrapper
 {
     background-color: #D3D3D3;  ;
     border-radius: 1rem;
-    height:44rem;
+    height:40rem;
     width: 100%;
 }
 
@@ -13,10 +18,24 @@
     padding:2rem 0;
 }
 
-.company-employee-select-container select
+.company-employee-select-container 
+select
 {
     text-align: center;
     font-weight: bold;
     width: 100%;
     border-radius: 0.5rem;
 }
+
+
+.company-employee-post-content p 
+{
+    padding-top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.company-employee-post-content .company-employee-bottom 
+{
+    display:none;
+}
+
