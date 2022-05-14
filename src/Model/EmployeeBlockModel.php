@@ -5,11 +5,10 @@
  *
  * This file class register custom post gutenberg,enqueing block code and fetched HTML from EmployeePostPublic to use as the block display.
  *
- * @link URL
  *
  * @package WordPress
  * @subpackage Component
- * @since x.x.x (when the file was introduced)
+ * @since 11.5.2022
  */
 
 declare(strict_types=1);
@@ -62,4 +61,5 @@ class EmployeeBlockModel extends EmployeePostPublic
 
         new EmployeePostPublic();
     }
+
 }

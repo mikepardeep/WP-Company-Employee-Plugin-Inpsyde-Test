@@ -2,6 +2,10 @@
 
 This plugin display the list of employees profile based on user selection. The employees are registered through the custom post field.
 
+# Development
+
+
+
 ## Usage
 1. Activate the Company Employee Plugin.
 2. Once plugin activated,click employees post icon in admin menu.

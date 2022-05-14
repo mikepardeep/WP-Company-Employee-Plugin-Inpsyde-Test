@@ -5,11 +5,9 @@
  *
  * This file class add metaboxes, render metaboxes html code, and save metaboxes to database.
  *
- * @link URL
  *
- * @package WordPress
- * @subpackage Component
- * @since x.x.x (when the file was introduced)
+ * @package Company Employee Plugin
+ * @since 11.05.2022
  */
 
 

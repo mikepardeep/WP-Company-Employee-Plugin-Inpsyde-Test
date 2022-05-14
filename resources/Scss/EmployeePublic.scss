@@ -108,6 +108,16 @@ p
     align-items: center;
 }
 
+
+.company-employee-bottom-popup .company-employee-description
+{
+    color:black;
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
 .company-employee-social-link
 {
     display:flex;
@@ -143,21 +153,29 @@ a:hover
 span
 {
     font-size: 15px;
-    padding-top:0.7rem;
+    padding-top:0.8rem;
     padding-right: 0.7rem;
+}
+
+.company-employee-social-link 
+span
+img 
+{
+    opacity: 0.5;
+    padding-top: 0.3rem;
 }
 
 
 //Code for Onclick function
 .display-profile
 {
-    display:flex;
+    display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
-.hide-arrow
+.hide-down-arrow
 {
-    display:none;
+    display: none !important;
 }

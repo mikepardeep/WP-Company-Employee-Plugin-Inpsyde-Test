@@ -3,7 +3,7 @@
 /**
  * Company Employee Plugin
  *
- * @package           PluginPackage
+ * @package           Company Employee Plugin
  * @author            Pardeep Mohan
  * @copyright         2022 Pardeep Mohan
  * @license           GPL-2.0-or-later
@@ -15,7 +15,7 @@
  * Requires at least: 5.2
  * Requires PHP:      7.2
  * Author:            Pardeep Mohan
- * Text Domain:       plugin-company_employee
+ * Text Domain:       company_employee
  * License:           GPL v2 or later
 
  */
@@ -57,7 +57,7 @@ register_activation_hook(__FILE__,'company_employee_activate');
 function company_employee_deactivate()
 {
     CompanyEmployeePluginDeactivate::deactivate();
- }
+}
 
 register_deactivation_hook(__FILE__,'company_employee_deactivate');
 
@@ -74,7 +74,6 @@ register_uninstall_hook(__FILE__,'company_employee_uninstall');
 
 
 // Plugin main file execution.
-
 
 function main_plugin_file_execution()
 {

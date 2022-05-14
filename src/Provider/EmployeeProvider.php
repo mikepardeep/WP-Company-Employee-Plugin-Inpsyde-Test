@@ -5,11 +5,9 @@
  *
  * This file class initialized all the classes accordingly.
  *
- * @link URL
  *
  * @package WordPress
- * @subpackage Component
- * @since x.x.x (when the file was introduced)
+ * @since 11.05.2022
  */
 
 

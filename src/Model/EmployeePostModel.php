@@ -5,11 +5,9 @@
  *
  * This file class register custom post and define post configuration.
  *
- * @link URL
  *
- * @package WordPress
- * @subpackage Component
- * @since x.x.x (when the file was introduced)
+ * @package Company Employee Plugin
+ * @since 10.5.2022
  */
 
  

@@ -5,11 +5,9 @@
  *
  * This file class provides HTML code for plugin front-end
  *
- * @link URL
  *
- * @package WordPress
- * @subpackage Component
- * @since x.x.x (when the file was introduced)
+ * @package Company Employee Plugin
+ * @since 12.05.2022
  */
 
 
@@ -36,6 +34,8 @@ class EmployeePostPublic
            'p' => $employeeID,
         ]);
 
+        wp_enqueue_style('employee_public_style');
+
         while ($employeePost-> have_posts()) {
             $employeePost -> the_post();
             ob_start();
@@ -50,11 +50,11 @@ class EmployeePostPublic
                             <p>Learn more about this employee</p>
                             <span onclick="displayProfile()" class="dashicons dashicons-arrow-down-alt" id="down-arrow-icon"></span>
                             <div class="company-employee-bottom-popup" id="employee-bottom-popup">
-                                <p><?php echo get_post_meta($post->ID, 'short_description', true) ?></p>
+                                <p class="company-employee-description"><?php echo get_post_meta($post->ID, 'short_description', true) ?></p>
                                 <div class="company-employee-social-link">
                                     <p><a href="<?php echo get_post_meta($post->ID, 'facebook_link', true) ?>"><span class="dashicons dashicons-facebook-alt"></span>facebook</a></p>
                                     <p><a href="<?php echo get_post_meta($post->ID, 'linkedIn_link', true) ?>"><span class="dashicons dashicons-linkedin"></span>linkedIn</a></p>
-                                    <p><a href="<?php echo get_post_meta($post->ID, 'github_link', true) ?>"><span class="dashicons fa fa-github"></span>github</a></p>
+                                    <p><a href="<?php echo get_post_meta($post->ID, 'github_link', true) ?>"><span  class="dashicons"><img src="<?php echo plugins_url( 'assets/GitHub-32px.png', dirname(__DIR__)) ?>"></span>github</a></p>
                                     <p><a href="<?php echo get_post_meta($post->ID, 'xing_link', true) ?>"><span class="dashicons  dashicons-xing"></span>xing</a></p>
                                 </div>
                                 <span onclick="hideProfile()" class="dashicons dashicons-arrow-up-alt" id="up-arrow-icon"></span> 
@@ -63,23 +63,24 @@ class EmployeePostPublic
                     </div>
             </div>
             <script>
+
                 function displayProfile()
                 {
                     let popup =  document.getElementById("employee-bottom-popup")
                     let downarrow = document.getElementById("down-arrow-icon")
                     popup.classList.add('display-profile')
-                    downarrow.classList.add('hide-arrow')
+                    downarrow.classList.add('hide-down-arrow')
                 }
 
                 function hideProfile()
                 {
-                    let uparrow =  document.getElementById("up-arrow-icon")
                     let popup =  document.getElementById("employee-bottom-popup")
                     let downarrow = document.getElementById("down-arrow-icon")
                     popup.classList.remove('display-profile')
-                    downarrow.classList.remove('hide-arrow')
+                    downarrow.classList.remove('hide-down-arrow')
 
                 }
+
             </script>
             
             <?php

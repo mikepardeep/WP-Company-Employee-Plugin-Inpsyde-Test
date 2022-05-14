@@ -1,15 +1,13 @@
 <?php
 
 /**
- * Summary (no period for file headers)
+ * Rest API Registration
  *
- * Description. (use period)
+ * This file class create custom api route and send HTML code fetched from EmployeePostPublic class.
  *
- * @link URL
  *
- * @package WordPress
- * @subpackage Component
- * @since x.x.x (when the file was introduced)
+ * @package Company Employee Plugin
+ * @since 11.05.2022 
  */
 
 

@@ -1,12 +1,15 @@
 <?php
 
-/*
- * This file is part of the company employee plugin package.
+/**
+ * Plugin Deactivation
+ *
+ * This file class run after plugin deactivation hook triggered.
  *
  *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
+ * @package Company Employee Plugin
+ * @since 12.5.2022 
  */
+
 
 declare(strict_types=1);
 

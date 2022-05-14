@@ -1,11 +1,14 @@
 <?php
 
-/*
- * This file is part of the company employee plugin package.
+/**
+ * Plugin Uninstall
+ *
+ * This file class run after plugin uninstall hook triggered.
  *
  *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
+ * @package WordPress
+ * @subpackage Component`
+ * @since 13.05.2022 
  */
 
 declare(strict_types=1);
