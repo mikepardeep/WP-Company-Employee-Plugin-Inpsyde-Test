@@ -60,5 +60,4 @@ class EmployeeBlockModel extends EmployeePostPublic
 
         new EmployeePostPublic();
     }
-
 }

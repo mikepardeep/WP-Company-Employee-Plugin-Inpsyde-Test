@@ -10,7 +10,6 @@
  * @since 11.05.2022
  */
 
-
 declare(strict_types=1);
 
 namespace CompanyEmployee\Provider;
@@ -28,18 +27,14 @@ class EmployeeProvider
         $this->initClasses();
     }
 
-
     // Company Employee Post Class Initialize Funciton.
 
     public function initClasses()
     {
-        new EmployeePostModel;
-        new EmployeeMetaboxModel;
-        new EmployeeBlockModel;
-        new EmployeePostApi;
-        new EmployeeRegistration;
+        new EmployeePostModel();
+        new EmployeeMetaboxModel();
+        new EmployeeBlockModel();
+        new EmployeePostApi();
+        new EmployeeRegistration();
     }
-
 }
-
-

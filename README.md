@@ -59,15 +59,8 @@ The plugin file structure is as follow:
 * WordPress 4.4+
 * WP Memory limit of 64 MB or greater (128 MB or higher is preferred)
 
-### Automatic Installation
-This is the easiest way to install the Company Employee plugin.
-1. Log into your WordPress installation.
-2. Go to the menu item *Plugins* and then to *Install*.
-3. Search for *Company Employee Plugin*. In case several plugins are listed, check if *Pardeep Mohan* is the plugin author.
-4. Click *Install Now* and wait until WordPress reports the successful installation.
-
 ### Manual Installation
-In case the automatic installation doesn’t work, download the plugin from here via the *Download*-button. Unpack the archive and load the folder via FTP into the directory `wp-content\plugins` of your WordPress installation. Go to *Plugins => Installed plugins* and click *Activate* on *Company Employee Plugin*.
+Download the plugin from here via the *Download*-button. Unpack the archive and load the folder via FTP into the directory `wp-content\plugins` of your WordPress installation. Go to *Plugins => Installed plugins* and click *Activate* on *Company Employee Plugin* by *Pardeep Mohan*.
 
 # Usage
 This is the procedure for Company Employee plugin usage.
