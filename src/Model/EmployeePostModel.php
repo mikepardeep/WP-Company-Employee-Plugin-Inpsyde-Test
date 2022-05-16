@@ -10,7 +10,6 @@
  * @since 10.5.2022
  */
 
- 
 declare(strict_types=1);
 
 namespace CompanyEmployee\Model;

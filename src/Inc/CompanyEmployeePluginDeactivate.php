@@ -7,9 +7,8 @@
  *
  *
  * @package Company Employee Plugin
- * @since 12.5.2022 
+ * @since 12.5.2022
  */
-
 
 declare(strict_types=1);
 
