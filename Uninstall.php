@@ -6,8 +6,7 @@
  * This file class run after plugin uninstall hook triggered.
  *
  *
- * @package WordPress
- * @subpackage Component`
+ * @package Company Employee Plugin
  * @since 13.05.2022 
  */
 

@@ -6,8 +6,7 @@
  * This file class register custom post gutenberg,enqueing block code and fetched HTML from EmployeePostPublic to use as the block display.
  *
  *
- * @package WordPress
- * @subpackage Component
+ * @package Company Employee Plugin
  * @since 11.5.2022
  */
 

@@ -3,10 +3,10 @@
 /**
  * Main Plugin Class Initialization
  *
- * This file class initialized all the classes accordingly.
+ * This file class compiled all the classes accordingly.
  *
  *
- * @package WordPress
+ * @package Company Employee Plugin
  * @since 11.05.2022
  */
 
