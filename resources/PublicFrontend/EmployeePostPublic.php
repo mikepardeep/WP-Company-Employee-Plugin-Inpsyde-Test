@@ -3,7 +3,7 @@
 /**
  * Post Public Frontend HTML Code
  *
- * This file class provides HTML code for plugin front-end
+ * This class provides HTML code for plugin front-end
  *
  *
  * @package Company Employee Plugin
@@ -54,7 +54,7 @@ class EmployeePostPublic
                                 <div class="company-employee-social-link">
                                     <p><a href="<?php echo get_post_meta($post->ID, 'facebook_link', true) ?>"><span class="dashicons dashicons-facebook-alt"></span>facebook</a></p>
                                     <p><a href="<?php echo get_post_meta($post->ID, 'linkedIn_link', true) ?>"><span class="dashicons dashicons-linkedin"></span>linkedIn</a></p>
-                                    <p><a href="<?php echo get_post_meta($post->ID, 'github_link', true) ?>"><span  class="dashicons"><img src="<?php echo plugins_url( 'assets/GitHub-32px.png', dirname(__DIR__)) ?>"></span>github</a></p>
+                                    <p><a href="<?php echo get_post_meta($post->ID, 'github_link', true) ?>"><span  class="dashicons"><img src="<?php echo plugins_url('assets/GitHub-32px.png', dirname(__DIR__)) ?>"></span>github</a></p>
                                     <p><a href="<?php echo get_post_meta($post->ID, 'xing_link', true) ?>"><span class="dashicons  dashicons-xing"></span>xing</a></p>
                                 </div>
                                 <span onclick="hideProfile()" class="dashicons dashicons-arrow-up-alt" id="up-arrow-icon"></span> 
